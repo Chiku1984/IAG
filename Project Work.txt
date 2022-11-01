@@ -1,0 +1,216 @@
+:
+
+yyprdap25 -- satellite server
+wgprd01 -- RIP PRD server
+wgdev01 -- RIP DEV server
+yyprd15  -- RAPI PRD server
+YYDEV11 -- RAPI DEV
+yyprdap14 -- Network API
+
+Ansible Code Setup : 
+Satellite Server - bal3551tst060
+user - ansible-admin
+password - ansible-admin
+
+[root@bal3551tst027 .ssh]# ansible -m ping all
+yytstap23 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+User : ansible-server
+Pass : ansible123
+
+ 
+Ansible server 2: bal3183dev001
+User : ansible-master
+Pass : ansible-master
+
+bal3551tst019
+
+Jenkins Server: yyprd13
+user: n515080
+
+
+
+RIP Application -- http://rip.baplc.com/
+
+Jenkins --  http://utsjenkins.baplc.com/login?from=%2Fjob%2FRIP-FrontEnd%2Fconfigure
+
+
+Videos
+
+Yuvaraj RIP explained -- https://baplc-my.sharepoint.com/personal/rohit_tanwar_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Frohit%5Ftanwar%5Fba%5Fcom%2FDocuments%2FRecordings%2FSprint%201%20%2D%20RHEL%208%20Project%20Technical%20Discussion%2D20220429%5F113440%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Frohit%5Ftanwar%5Fba%5Fcom%2FDocuments%2FRecordings&ct=1652703041640&or=Teams%2DHL&ga=1
+
+Goutam Flow explained -- https://baplc-my.sharepoint.com/personal/anirudhya_sanyal_ba_com/_layouts/15/onedrive.aspx?ct=1652438567039&or=Teams%2DHL&ga=1&id=%2Fpersonal%2Fanirudhya%5Fsanyal%5Fba%5Fcom%2FDocuments%2FRecordings%2FDaily%20stand%20up%20Call%20%2D%20RHEL%208%20Project%2D20220512%5F134854%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fanirudhya%5Fsanyal%5Fba%5Fcom%2FDocuments%2FRecordings
+
+Yuvaraj RIP Explained -- https://baplc-my.sharepoint.com/personal/rohit_tanwar_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Frohit%5Ftanwar%5Fba%5Fcom%2FDocuments%2FRecordings%2FSprint%201%20%2D%20RHEL%208%20Project%20Technical%20Discussion%2D20220429%5F113440%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Frohit%5Ftanwar%5Fba%5Fcom%2FDocuments%2FRecordings&ct=1652703041640&or=Teams%2DHL&ga=1
+
+Yuvaraj code setup --  https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FAnsible%20Code%20Setup%2D20220512%5F104031%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+RIP Environment Issue Yuv-Piy  --  https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FCall%20with%20Nikhil%20and%201%20other%2D20220513%5F141549%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+Goutam Login Issue Discussion -- https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FRIP%20login%20issues%20%2D%20DEV%2D20220517%5F132430%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+John Phillips Ansible Tower Video --  https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FDiscussion%20on%20Gitlab%20Code%20for%20RHEL%208%20project%2D20220520%5F140052%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+Yuvaraj Puppet Code explaination --  https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FCall%20with%20Nikhil%20and%201%20other%2D20220524%5F162452%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+Alok Pradarsh Database changes -- https://baplc-my.sharepoint.com/personal/nikhil_soni_soni_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fnikhil%5Fsoni%5Fsoni%5Fba%5Fcom%2FDocuments%2FRecordings%2FSupport%20Call%2D20220630%5F153136%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fnikhil%5Fsoni%5Fsoni%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+Ansible code review call 1 -- https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FAnsible%20code%20review%20and%20fix%2D20220701%5F110418%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+Ansible code review call 2 -- https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FAnible%20Code%20and%20Test%2D20220705%5F142637%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+Ansible code review call 3 -- https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FAnible%20Code%20and%20Test%2D20220706%5F143510%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+Ansible code review call 4 -- https://baplc-my.sharepoint.com/personal/karthikeyan_rajendran_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkarthikeyan%5Frajendran%5Fba%5Fcom%2FDocuments%2FRecordings%2FAnible%20Code%20and%20Test%2D20220707%5F141326%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fkarthikeyan%5Frajendran%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+Database Issue check with Alok -- https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FRIP%20and%20RAPI%20Check%2D20220706%5F110210%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+Call with Samarjeet on RCG overview -- https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FWeekly%20Status%2D20220714%5F082712%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+
+Call with Ameen on CBO 1.4 -- https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FMeeting%20CBO%201%2E4%2D20220804%5F105307%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+
+Call for MHE Issues -- https://baplc-my.sharepoint.com/personal/piyush_sinha_sinha_ba_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings%2FSuper%20Cluster%20Issue%20discussion%2D20220901%5F120847%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fpiyush%5Fsinha%5Fsinha%5Fba%5Fcom%2FDocuments%2FRecordings&ga=1
+
+
+CMI
+TDC  ----  Newly started   Swastika Bhattacharya - 518724
+MHE  ----  Automation anywhere (Venilla 2274531), super cluster (Roja, Kusuma 1955029 1956256), Data Center (Ritesh, Kartik Vyas 1946830)
+
+Tech BU
+ASML -- Rishabh Patel -- 962117
+NXP -- Devmuni Ahir
+AMD -- In closure phase
+
+yyprdap25
+
+service webserver-apache stop
+
+yytstap23a
+
+
+root1234
+
+ssh root@yytstap23
+
+ssh root@yytstap23a
+
+Need access to the AWS services for accessing the BA client related Office and other Apps so the project delivery is smooth. We already in Sprint 2 now so need access ASAP.
+
+
+What is RIP and RAPI?
+Tools used in RIP and RAPI ?
+How they are connected?
+RHEL8 configuration in RIP ?
+Mongo DB and Oracle DB contents for RIP ?
+RAPI 12 APIs and their calling ?
+
+
+[root@yyprdap26a facter]# cat ldap_backup_uri.rb
+# Fact: ldap_backup_uri
+#
+# This is used to determine if we are performing the initial puppet run.
+# We previously used the runlevel to determine whether we were running in
+# a kickstart post-install environment before performing certain actions,
+# such as: configuring firstboot puppet runs & restarting the network.
+
+number_of_servers = 8
+
+Facter.add(:ldap_backup_uri) do
+  confine :domain => 'baplc.com'
+  setcode do
+    ipaddress = Facter.value(:ipaddress)
+
+   last_octet = ipaddress.split('.')[3]
+
+   h1 = last_octet.to_i % number_of_servers + 1
+    h2 = h1 + (number_of_servers / 2)
+    if h2 > number_of_servers
+      h2 = h2 - number_of_servers
+    end
+
+   "ldaps://corpunix0#{h1}.baplc.com,ldaps://corpunix0#{h2}.baplc.com"
+  end
+end
+
+
+Server Authentication
+1. required package that needs to be installed
+2. Files need to be placed as part of installation
+3. Autoffs for remoting
+4. Port numbers for authentication that is allowed for client to LDAP server connection
+5. Audit
+
+Vandana Arya --  va57735
+Jeswin -- 77019JE
+444NJ63
+
+
+Total Coverage
+Total tickets Received by Ansible / Total tickets 
+
+Efficiency
+Total success (tickets automated)/Total tickets received by Ansible till now
+Resolved / Received
+
+Automation Index 
+Total success (tickets automated) / Total tickets
+
+
+Accounts and their health
+Total use case delivered
+Total hours saved
+Overall automation index
+overall efficiency
+support required
+open positions
+
+KFN4T6B3
+
+5003220596816
+
+
+CRM data -- who are sharing the data
+Online advertising system, app marketing system, ------ each may have high bandwidth   ----  cloud readiness, respective servers, DB tabs., storage, the transition time between data and the query, network latency, VMs readiness
+Data Analytics  --  User segmentation
+
+Mishap
+Campaign Launch failure
+Process failure    --    content server was down       active-passive  
+
+
+Content applications
+Storage
+Network Latency
+Peripheral system   -  email, internet, radio FM.
+Internet bandwidth
+Chatbots
+
+OTT platform
+
+Marketing automation
+
+Approach  --  
+Reaching to CBO leads or the Account team
+Skills expansion
+Reaching to Account team for work where our presence is minimum
+
+Object creation
+routing interface
+Firewall rule creation
+NAT creation
+
+Access to All the routers and firewalls, switches
+
+
+TDC - 4-6 Q3
+MHE - 6
+
+https://automateinfra.com/2022/01/08/how-to-deploy-apache-tomcat-using-ansible/
+
+
+1001341697293034
+120011

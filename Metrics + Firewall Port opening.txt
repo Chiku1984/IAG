@@ -1,0 +1,97 @@
+
+
+
+Incident
+Total - 1416
+MFDM - 267
+
+Change Request
+Total - 4421
+MFDM - 0
+
+Service Request
+Total - 6544
+MFDM - 0
+
+
+
+
+
+Object creation
+routing interface
+Firewall rule creation
+NAT creation
+
+
+Access to All the routers and firewalls, switches
+
+TDC
+
+Total Incidents/ SR/Changes/Alerts/  = 12691
+Contacts in Account          [A]
+
+In Scope for EAAP   [B]   =  11742
+
+Eliminated   [C]   =  7000
+
+Enriched as per design  [D]    =   0
+
+Failed  [E]    =   0
+
+Fully Automated   [F]    =  3871
+
+Total # of tickets covered till date  [G=C+D+E+F] = 10871
+
+EAAP Coverage [G/B] =    93%
+
+EAAP Effectiveness [C+D+F/G] = 100%
+
+AI [F/B] =   33%
+
+
+MHE
+
+Total Incidents/ SR/Changes/Alerts/  = 1506
+Contacts in Account          [A]
+
+In Scope for EAAP   [B]   =  67
+
+Eliminated   [C]   =  10
+
+Enriched as per design  [D]    =   0
+
+Failed  [E]    =   34
+
+Fully Automated   [F]    =  23
+
+Total # of tickets covered till date  [G=C+D+E+F] = 67
+
+EAAP Coverage [G/B] =    100%
+
+EAAP Effectiveness [C+D+F/G] = 49%
+
+AI [F/B] =   34%
+
+
+ASML
+
+Total Incidents/ SR/Changes/Alerts/  = 22000
+Contacts in Account          [A]
+
+In Scope for EAAP   [B]   =  1350
+
+Eliminated   [C]   =  400
+
+Enriched as per design  [D]    =   15
+
+Failed  [E]    =   20
+
+Fully Automated   [F]    =  660
+
+Total # of tickets covered till date  [G=C+D+E+F] = 1095
+
+EAAP Coverage [G/B] =    81%
+
+EAAP Effectiveness [C+D+F/G] = 98%
+
+AI [F/B] =   49%

@@ -1,0 +1,16 @@
+ UserDAOTest.java
+
+ @Test
+  @Transactional(value = "transactionManager")
+  public void getUserTest() throws Exception{
+    final String uid = "u123456"; //hardcode
+    createUser(uid);
+    User user = userDAO.get(User.class, uid);
+    
+    Assert.assertEquals(uid, user.getUid());
+    
+  }
+
+ UserController.class
+post is missing
+path: webapps/rip/web-inf/classes/com/ba/uts/rip/rest
