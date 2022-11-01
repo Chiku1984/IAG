@@ -1,0 +1,56 @@
+#
+# This playbook assumes the WebSphere MQ file provided by IBM has already been
+# downloaded to a specific directory (target.wd) on the server. 
+#
+# ${target.wd} is a variable representing the working directory on the target
+# server the MQ client will be installed.
+#
+# Note: Although this playbook is designed to be able to be run independently,
+# it is in fact part of a longer playbook and therefore may have some other
+# unexpected dependencies not reflected here.
+#
+# Install WebSphere MQ 
+#
+#- name: Install WebSphere MQ
+#  hosts: ${host}
+#  user: root
+#  vars_files:
+#    - vars.yml
+#  gather_facts: false
+---
+- name: Install debian packages
+  dnf: pkg=${item} state=installed
+  with_items: ${websphere_mq.packages}
+    
+- name: Untar MQ Client
+  command: tar zxf ${websphere_mq.zip_file}
+        chdir=${target.wd}
+       creates=${target.wd}/mqlicense.sh
+    
+# Need to run this with ksh; script syntax is not bash-compliant
+- name: Accept MQ Client license
+  command: ksh mqlicense.sh -accept
+        chdir=${target.wd}
+        creates=${target.wd}/mqseriesruntime_7.0.1-5_i386.deb
+      
+- name: Setup mqm user
+  user: name=${websphere_mq.user.name}
+        home=${websphere_mq.user.home}
+        state=present
+    
+- name: Create MQ series deb using alien
+  command: alien --scripts --to-deb ${item.rpm}-7.0.1-4.i386.rpm
+        chdir=${target.wd}
+        creates=${target.wd}/${item.deb}_7.0.1-5_i386.deb
+  with_items:
+     - { rpm: 'MQSeriesRuntime', deb: 'mqseriesruntime' }
+     - { rpm: 'MQSeriesClient', deb: 'mqseriesclient' }
+     - { rpm: 'MQSeriesSDK', deb: 'mqseriessdk' }
+    
+- name: Install MQ series packages
+  command: dpkg --skip-same-version -i ${item}_7.0.1-5_i386.deb
+        chdir=${target.wd}
+  with_items:
+    - mqseriesruntime
+    - mqseriesclient
+    - mqseriessdk

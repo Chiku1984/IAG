@@ -1,0 +1,13 @@
+#
+# WebSphere MQ Settings
+#
+websphere_mq:
+  zip_file: apache-activemq-5.15.8-bin.tar.gz
+  
+  user:
+    name: mqm
+    home: /var/mqm
+  
+  packages:
+    - alien
+    - ksh

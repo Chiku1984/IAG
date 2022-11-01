@@ -1,0 +1,10 @@
+#Test for Ansible Roles
+---
+- hosts: yytstap23
+  remote_user: root
+  roles:
+#    - Ansible.Network_Interface
+#    - Ansible-sssd
+#    - Ansible-PAM
+#    - Ansible-Timezone
+     - Ansible-Audit
